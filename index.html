@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading1">hello world</h1>
+         <h2 id="heading2">how are u</h2>
+         <p class="para1">first paragraph</p>
+         <h3 id="heading3">hello world</h3>
+         
+         <button onclick="showMe()">clickMe</button>
+         <script>
+document.getElementById("heading1").innerHTML = "welcome";
+
+document.getElementsByClassName("para1")[0].innerHTML = "this is a new paragraph";
+
+document.getElementsByTagName("h2")[0].innerHTML = "this is new tag";
+
+let newElement = document.createElement("h3");
+newElement.innerHTML = "this is heading3";
+document.body.appendChild(newElement);
+
+document.getElementById("heading1").remove();
+
+function showMe() {
+    alert("how are you");
+    document.body.style.backgroundColor = "blue";
+}
+</script>
+
+</body>   
+</body>
+</html>
